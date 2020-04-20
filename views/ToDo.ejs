@@ -1,8 +1,8 @@
 <html>
     <head>
         <title>To Do List</title>
-        <script src="https://code.jquery.com/jquery-3.5.0.min.js"  integrity="sha256" crossorigin="anonymous"></script>
-        <link href="" rel ="stylesheet" type = "text/css" />
+        <script src="https://code.jquery.com/jquery-3.5.0.min.js" integrity="sha384-LVoNJ6yst/aLxKvxwp6s2GAabqPczfWh6xzm38S/YtjUyZ+3aTKOnD/OJVGYLZDl" crossorigin="anonymous"></script>
+        <link href="/assests/style.css" rel ="stylesheet" type = "text/css" />
     </head>
     <body>
         <div id="todo-table">
@@ -11,10 +11,9 @@
                 <button type="submit">Add Item</button>
             </form>
             <ul>
-                <li>Item 1</li>
-                <li>Item 2</li>
-                <li>Item 3</li>
-                <li>Item 4</li>
+                <% for(var i= 0; i < todos.length; i++){ %>
+                    <li> <%= todos[i].item%></li>
+                    <% } %>
             </ul>
         </div>
     </body>
