@@ -8,9 +8,11 @@ $(document).ready(function(){
         $.ajax({
           type: 'POST',
           url: '/todo',
-          data: todo,
+          data: 'form input='+todo,
+          datatype: 'text',
           success: function(data){
             //do something with the data via front-end framework
+            alert("Yay!")
             location.reload();
           }
         });
