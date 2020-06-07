@@ -1,21 +1,20 @@
 <html>
     <head>
         <title>To Do List</title>
-        <script src="https://code.jquery.com/jquery-3.5.0.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>        
-        <script src="http://code.jquery.com/jquery-1.12.3.min.js"></script>
-        <script src="/assets/ToDo_List.js"></script>
+        <script src="https://code.jquery.com/jquery-3.5.0.js" integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc=" crossorigin="anonymous"></script>
         <link href="/assests/style.css" rel ="stylesheet" type = "text/css" />  
+        <script src="/assests/Todo_List.js"></script>
     </head>
     <body>
         <div id="todo-table">
-            <form>
+            <form method="POST">
                 <input type="text" name="item" placeholder="Add new item..." required/>
                 <button type="submit">Add Item</button>
             </form>
             <ul>
                 <% for(var i= 0; i < todos.length; i++){ %>
                     <li><%= todos[i].item %></li>
-                    <% } %>
+                <% } %>
             </ul>
         </div>
     </body>
