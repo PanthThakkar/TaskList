@@ -7,7 +7,7 @@ body{
 #todo-table{
     position: relative;
     width: 95%;
-    background: #090d13;
+    background: #FFA500;
     margin: 0 auto;
     padding: 20px;
     box-sizing: border-box;
@@ -34,7 +34,7 @@ button{
     padding: 20px;
     width: 30%;
     float: left;
-    background: #23282e;
+    background: #0000CD;
     border: 0;
     box-sizing: border-box;
     color: #fff;
